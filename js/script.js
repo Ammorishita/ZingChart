@@ -49,7 +49,6 @@ var engine = {
 	    	if(results.businesses.length < 1) {
 	    		alert('No results found')
 	    	}
-	    	console.log(results)
 	    	var yelpName = results.businesses[0].name;
 	    	var yelpRating = results.businesses[0].rating;
 	    	var yelpReviewCount = results.businesses[0].review_count;
@@ -57,7 +56,6 @@ var engine = {
 	    	yelpData = [];
 	    	yelpData.push.apply(yelpData, [yelpRating,yelpReviewCount,yelpName,yelpURL]);
 	    	renderChart();
-	    	console.log(yelpData[2]);
 	    	if(!addChart) {
 		    	let script = document.createElement('script');
 		    	script.src = 'js/chart.js';

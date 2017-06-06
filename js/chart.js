@@ -16,6 +16,9 @@ var chartData = {
 			'method':'0',
 			'sequence':'0',
 			'speed':'5'
+		},
+		'tooltip':{
+			'text': '%v %t'
 		}
 	},
 	'plotarea':{
